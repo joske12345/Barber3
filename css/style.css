@@ -7,7 +7,7 @@ body
 .navigation
 {
     height: 55px;
-    background-color: linear-gradient(45deg, #4199fe, #74b4fe);
+    background-color: linear-gradient ( #4199fe, #74b4fe);
 }
 .brand
 {
@@ -18,9 +18,9 @@ body
     text-transform: uppercase;
     font-size: 1.4em;
 }
-.brand a, .branda:visited
+.brand a, .brand a:visited
 {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 .nav-container
@@ -48,20 +48,20 @@ nav ul li a, nav ul li a:visited
     display: block;
     padding: 0 20px;
     line-height: 55px;
-    color: #ffff;
+    color: #fff;
     background-color: #262626;
     text-decoration: none;
 }
 nav ul li a
 {
-    background: transparent;
-    color: #fff;
+    /*background: transparent;*/
+    color: #FFF;
 }
 nav ul li a:hover,
 nav ul li a:visited:hover
 {
-    background-color: #2581dc;
-    color: #fff;
+    background: #2581dc;
+    color: #FFF;
 }
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child)::after
@@ -85,7 +85,39 @@ nav ul li ul li a
     position: absolute;
     top: 0;
     right: 0;
-    background: transparent;
+    /*background: transparent; */
     height: 55px;
     width: 70px;
+}
+@media only screen and (max-width: 800px){
+    .navbar
+    {
+        display: block;
+    }
+    nav
+    {
+        width: 100%;
+        padding: 55px 0 15px;
+    }
+    nav ul 
+    {
+        display: none;
+    }
+    nav ul li
+    {
+        float: none;
+    }
+    nav ul li a 
+    {
+        padding: 15px;
+        background: #262626;
+    }
+    nav ul li ul a
+    {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (min-widht: 800px) {
+    
 }
