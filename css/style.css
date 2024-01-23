@@ -79,3 +79,13 @@ nav ul li ul li a
     line-height: 20px;
 }
 /* Mobile navigation */
+.nav-mobile
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    height: 55px;
+    width: 70px;
+}
