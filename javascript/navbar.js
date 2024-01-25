@@ -1,15 +1,19 @@
-(function ($) {
-    $(function () {
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('nav a');
 
-        //  open and close nav 
-        $('#navbar-toggle').click(function () {
-            $('nav ul').slideToggle();
-        });
+    // Add click event listener to each navigation link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
 
+            // Get the target container's ID from the link's href
+            const targetId = link.getAttribute('href').substring(1);
 
-        // Hamburger toggle
-        $('#navbar-toggle').on('click', function () {
-            this.classList.toggle('active');
+            // Scroll to the target container
+            document.getElementById(targetId).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
-})(jQuery); 
+});
