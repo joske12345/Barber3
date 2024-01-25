@@ -15,7 +15,10 @@ header {
     /* Set width for the side navigation */
     box-sizing: border-box;
 }
-
+.logo
+{
+    width: 180px;
+}
 nav {
     display: flex;
     flex-direction: column;
