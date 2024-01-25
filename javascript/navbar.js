@@ -11,9 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetId = link.getAttribute('href').substring(1);
 
             // Scroll to the target container
-            document.getElementById(targetId).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
