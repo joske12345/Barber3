@@ -19,7 +19,7 @@ header {
 nav {
     display: flex;
     flex-direction: column;
-    height: 60px; /* Adjust the height as needed */
+    height: 100px; /* Adjust the height as needed */
     width: auto;
     margin-bottom: 10px;
 }
