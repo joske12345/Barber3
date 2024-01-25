@@ -14,7 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetElement = document.getElementById(targetId);
 
             if (targetElement) {
-                targetElement.scrollIntoView({
+                const offset = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.offsetTop - offset;
+
+                window.scrollTo({
+                    top: targetPosition,
                     behavior: 'smooth'
                 });
             }
