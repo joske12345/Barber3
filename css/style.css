@@ -1,190 +1,299 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #242424;
+    color: #fff;
+    display: flex;
 }
 
-.navigation {
-    height: 55px;
-    background: linear-gradient(45deg, #4199fe, #74b4fe);
-}
-
-.brand {
-    position: absolute;
-    padding-left: 20px;
-    float: left;
-    line-height: 55px;
-    text-transform: uppercase;
-    font-size: 1.4em;
-}
-
-.brand a,
-.brand a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.nav-container {
-    max-width: 1000px;
-    margin: 0 auto;
+header {
+    background-color: #1c1c1c;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    /* Set width for the side navigation */
+    box-sizing: border-box;
 }
 
 nav {
-    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+nav img {
+    height: 40px;
+    width: auto;
+    margin-bottom: 10px;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    float: left;
-    position: relative;
-}
-
-nav ul li a,
-nav ul li a:visited {
-    display: block;
-    padding: 0 20px;
-    line-height: 55px;
-    color: #fff;
-    background: #262626;
-    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 nav ul li a {
-    background: transparent;
-    color: #FFF;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-nav ul li a:hover,
-nav ul li a:visited:hover {
-    background: #2581DC;
-    color: #ffffff;
+nav ul li a:hover {
+    background-color: #333;
 }
 
-.navbar-dropdown li a {
-    background: #2581DC;
+.barber-shop-container {
+    background-color: #333;
+    /* Dark grey background */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+    /* Occupy remaining space */
 }
 
-nav ul li a:not(:only-child):after,
-nav ul li a:visited:not(:only-child):after {
-    padding-left: 4px;
-    content: ' \025BE';
+.barber-shop-content {
+    max-width: 600px;
+    margin: auto;
 }
 
-nav ul li ul li {
-    min-width: 190px;
+.barber-shop-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-nav ul li ul li a {
+.barber-shop-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.barber-shop-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.barber-shop-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+main {
+    padding: 40px;
+    flex: 2;
+    /* Occupy more space than the side navigation */
+}
+
+footer {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+}
+
+.services-container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.service-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.service-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service-price {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.booking-container {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.booking-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-group button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.gallery-container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.price-list-container {
+    background-color: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.price-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.price-item {
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
     padding: 15px;
-    line-height: 20px;
+    border-radius: 8px;
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.navbar-dropdown {
-    position: absolute;
-    display: none;
-    z-index: 1;
-    background: #fff;
-    box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.25);
+.price-item:hover {
+    background-color: #555;
 }
 
-/* Mobile navigation */
-.nav-mobile {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: transparent;
-    height: 55px;
-    width: 70px;
+.service-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
-@media only screen and (max-width: 800px) {
-    .nav-mobile {
-        display: block;
-    }
+.service-price {
+    font-size: 16px;
+    color: #bbb;
+}
 
-    nav {
-        width: 100%;
-        padding: 55px 0 15px;
-    }
+.contact-container {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+    color: #fff;
+}
 
-    nav ul {
-        display: none;
-    }
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
-    nav ul li {
-        float: none;
-    }
+.social-links li {
+    margin: 0 10px;
+}
 
-    nav ul li a {
-        padding: 15px;
-        line-height: 20px;
-        background: #262626;
-    }
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
 
-    nav ul li ul li a {
-        padding-left: 30px;
-    }
-
-    .navbar-dropdown {
-        position: static;
-    }
-
-    @media screen and (min-width:800px) {
-        .nav-list {
-            display: block !important;
-        }
-    }
-
-    #navbar-toggle {
-        position: absolute;
-        left: 18px;
-        top: 15px;
-        cursor: pointer;
-        padding: 10px 35px 16px 0px;
-    }
-
-    #navbar-toggle span,
-    #navbar-toggle span:before,
-    #navbar-toggle span:after {
-        cursor: pointer;
-        border-radius: 1px;
-        height: 3px;
-        width: 30px;
-        background: #ffffff;
-        position: absolute;
-        display: block;
-        content: '';
-        transition: all 300ms ease-in-out;
-    }
-
-    #navbar-toggle span:before {
-        top: -10px;
-    }
-
-    #navbar-toggle span:after {
-        bottom: -10px;
-    }
-
-    #navbar-toggle.active span {
-        background-color: transparent;
-    }
-
-    #navbar-toggle.active span:before,
-    #navbar-toggle.active span:after {
-        top: 0;
-    }
-
-    #navbar-toggle.active span:before {
-        transform: rotate(45deg);
-    }
-
-    #navbar-toggle.active span:after {
-        transform: rotate(-45deg);
-    }
+.social-links a:hover {
+    background-color: #fff;
+    color: #333;
 }
