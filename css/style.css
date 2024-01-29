@@ -214,3 +214,11 @@ footer {
     padding-left: 20px;
     color: white;
   }
+  .social 
+  {
+    
+    align-content: center;
+    flex: auto;
+    width: 25px;
+    height: 25px;
+  }
