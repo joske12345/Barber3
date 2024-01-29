@@ -1,46 +1,48 @@
-body {
-   /* margin: 0;
-    padding: 0;*/
-    font-family: 'sofia', sans-serif;
-    background-color: #242424;
-    color: #fff;
-    display: flex;
-    height: 100%;
-}
-
-header {
-    background-color: #1c1c1c;
-    padding: 10px;
-    text-align: center;
-    width: 200px;
-    
-    box-sizing: border-box;
-}
-.logo
+body
 {
-    width: 180px;
+    font-family: "Sofia", sans-serif;
+    background-color: #242424;
 }
-nav {
+.logo-container {
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    height: 60px; 
-    width: auto;
-    margin-bottom: 10px;
+    align-items: center;
 }
-nav .img {
-    height: 40px;
-    width: auto;
-    margin-bottom: 100px;
+.logo-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px; 
+    height: auto;
+    color: transparent;
+    
+}
+
+nav {
+    width: 100%;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; 
 }
 
 nav ul li {
     margin-bottom: 10px;
+    margin-right: 20px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
 }
 
 nav ul li a {
@@ -57,7 +59,6 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #333;
 }
-
 .barber-shop-container {
     background-color: #333;
     height: 100vh;
