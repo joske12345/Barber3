@@ -214,11 +214,14 @@ footer {
     padding-left: 20px;
     color: white;
   }
-  .social 
-  {
-    
-    align-content: center;
-    flex: auto;
-    width: 25px;
-    height: 25px;
-  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.social a {
+    margin: 0 10px;
+    display: inline-block;
+}
