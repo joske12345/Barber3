@@ -1,6 +1,3 @@
-
-
-
 .brand {
     position: absolute;
     padding-left: 20px;
@@ -195,7 +192,6 @@ header {
     padding: 10px;
     text-align: center;
     width: 200px;
-  
     box-sizing: border-box;
 }
 
@@ -237,7 +233,6 @@ nav ul li a:hover {
 
 .about-container {
     background-color: #333;
-   
     height: 100vh;
     display: flex;
     align-items: center;
@@ -246,11 +241,10 @@ nav ul li a:hover {
     padding: 20px;
     box-sizing: border-box;
     flex: 1;
-    
 }
 
 .barber-shop-content {
-    max-width: 1000px; 
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -264,26 +258,103 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.fulltime-barber-descriptions {
+.fulltime-barber-descriptions,
+.Parttime-Barber-Descriptions {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px; 
 }
 
-.fulltime-barber-descriptions li {
-    flex-basis: calc(50% - 10px); 
+.fulltime-barber-descriptions li,
+.Parttime-Barber-Descriptions li {
+    flex-basis: calc(50% - 10px);
     margin-bottom: 20px;
 }
 
-.fulltime-barber-descriptions img {
+.fulltime-barber-descriptions img,
+.Parttime-Barber-Descriptions img {
     width: 100px;
     height: auto;
     margin-right: 20px;
     border-radius: 30%;
 }
 
+.fulltime-barber-descriptions .barber-description-text,
+.Parttime-Barber-Descriptions .barber-description-text {
+    flex: 1;
+}
+
 .barber-description-text {
     flex: 1;
 }
+
+.Barber-Descriptions {
+    padding: 20px;
+    text-align: center;
+}
+
+.Fulltime-Barber-Descriptions h2,
+.Parttime-Barber-Descriptions h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+    width: 100%; 
+}
+
+
+.reviews-container {
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+.reviews {
+  
+    margin-bottom: 20px; 
+}
+
+.review-item {
+    
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.review-item:nth-child(odd) {
+    background-color: #333;
+}
+
+.review-item .review-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.review-item .review-text {
+    color: #ffffff;
+}
+
+
+.review-item:nth-child(3),
+.review-item:nth-child(4) {
+    background-color: #333;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.review-item:nth-child(3) .review-author {
+    color: #ffffff; 
+}
+
+.review-item:nth-child(4) .review-author {
+    color: #ffffff; 
+}
+
+.review-item:nth-child(3) .review-text,
+.review-item:nth-child(4) .review-text {
+    color: #ffffff; 
+}
+
