@@ -64,23 +64,26 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #333;
 }
-*
-{
-    box-sizing: border-box;
-}
-
 .column
 {
-    float: left;
+    /*float: left;
     width: 25%;
-    padding: 0 10px;
+    padding: 0 10px;*/
+    flex: 0 0 calc(25% - 25px);
+    margin: 10px;
+    box-sizing: border-box;
+    
 }
-/* remove extra left and right margins, due to padding */
+
 .row
 {
     margin: 0 -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 ;
 }
-/* clear floats after the colum*/
+
 .row:after
 {
     content: "";
@@ -88,7 +91,7 @@ nav ul li a:hover {
     clear: both;
 
 }
-/* responsive columns*/
+
 @media screen and (max-widht: 800px)
 {
     .column
@@ -98,7 +101,7 @@ nav ul li a:hover {
         margin-bottom: 20px;
     }
 }
-/* style the counter cards*/
+
 .card
 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -106,4 +109,9 @@ nav ul li a:hover {
     text-align: center;
     background-color: grey;
     border-radius: 25px;
+   /* display: flex;*/
+}
+h2
+{
+    text-align: center;
 }
