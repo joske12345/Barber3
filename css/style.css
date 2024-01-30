@@ -1,8 +1,10 @@
+/* body style and font style*/
 body
 {
     font-family: "Sofia", sans-serif;
     background-color: grey;
 }
+/* logo container*/
 .logo-container {
     margin-bottom: 10px;
     display: flex;
@@ -22,7 +24,7 @@ body
     color: transparent;
     
 }
-
+/* navigation */
 nav {
     width: 100%;
     text-align: center;
@@ -59,6 +61,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #333;
 }
+/* booking container*/
 .barber-shop-container {
     background-color: #333;
     height: 100vh;
@@ -115,7 +118,7 @@ footer {
     background-color: #333;
     padding: 20px;
     text-align: center;
-   /* box-sizing: 50px;*/
+    box-sizing: border-box;
     margin-top: 40px;
 }
 
