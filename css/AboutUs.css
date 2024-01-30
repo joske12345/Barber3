@@ -1,3 +1,82 @@
+body {
+    font-family: "Sofia", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia", sans-serif;
+    background-color: grey;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.logo-container {
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    color: transparent;
+}
+.nav-container {
+    max-width: 1900px; 
+    margin: 0 auto;
+}
+
+header {
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    margin-right: 20px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
 .brand {
     position: absolute;
     padding-left: 20px;
@@ -50,12 +129,12 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-    background: #2581DC;
+    background: #333;
     color: #ffffff;
 }
 
 .navbar-dropdown li a {
-    background: #2581DC;
+    background: #333;
 }
 
 nav ul li a:not(:only-child):after,
@@ -81,7 +160,6 @@ nav ul li ul li a {
     box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* Mobile navigation */
 .nav-mobile {
     display: none;
     position: absolute;
@@ -178,61 +256,8 @@ nav ul li ul li a {
     }
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #242424;
-    color: #fff;
-    display: flex;
-}
-
-header {
-    background-color: #1c1c1c;
-    padding: 10px;
-    text-align: center;
-    width: 200px;
-    box-sizing: border-box;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-}
-
-nav img {
-    height: 40px;
-    width: auto;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-bottom: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-    background-color: #333;
-}
-
 .about-container {
-    background-color: #333;
+    background-color: grey;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -244,7 +269,7 @@ nav ul li a:hover {
 }
 
 .barber-shop-content {
-    max-width: 1000px;
+    max-width: 800px; 
     margin: auto;
 }
 
@@ -270,7 +295,7 @@ nav ul li a:hover {
 
 .fulltime-barber-descriptions li,
 .Parttime-Barber-Descriptions li {
-    flex-basis: calc(50% - 10px);
+    flex-basis: calc(33.33% - 10px); 
     margin-bottom: 20px;
 }
 
@@ -304,42 +329,40 @@ nav ul li a:hover {
     width: 100%; 
 }
 
-
 .reviews-container {
+    background-color: #222121; 
     padding: 20px; 
     margin-bottom: 20px; 
+    border-radius: 8px;
 }
 
 .reviews {
-  
     margin-bottom: 20px; 
 }
 
 .review-item {
-    
-    background-color: #333;
+    background-color: grey;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .review-item:nth-child(odd) {
-    background-color: #333;
+    background-color: gray;
 }
 
 .review-item .review-author {
     font-weight: bold;
-    color: #333;
+    color: gray;
 }
 
 .review-item .review-text {
     color: #ffffff;
 }
 
-
 .review-item:nth-child(3),
 .review-item:nth-child(4) {
-    background-color: #333;
+    background-color: gray;
     margin-top: 20px;
     padding: 15px;
     border-radius: 10px;
@@ -358,3 +381,129 @@ nav ul li a:hover {
     color: #ffffff; 
 }
 
+.footer {
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.booking-container {
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box, 50px;
+    margin-top: 40px;
+}
+
+.booking-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-group button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-container {
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 20px;
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
