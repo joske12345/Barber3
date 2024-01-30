@@ -74,14 +74,6 @@ nav ul li a:hover {
     box-sizing: border-box;
     
 }
-@media screen and (max-width: 800px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
 .row
 {
     margin: 0 -5px;
@@ -98,17 +90,6 @@ nav ul li a:hover {
     clear: both;
 
 }
-
-@media screen and (max-widht: 800px)
-{
-    .column
-    {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
 .card
 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -121,4 +102,38 @@ nav ul li a:hover {
 h2
 {
     text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        margin: 0 -5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #242424;
+        border-radius: 25px;
+        /* display: flex;*/
+    }
+
+    h2 {
+        text-align: center;
+    }
 }
