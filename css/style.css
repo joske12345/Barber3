@@ -115,7 +115,7 @@ footer {
     background-color: #333;
     padding: 20px;
     text-align: center;
-    box-sizing: 50px;
+   /* box-sizing: 50px;*/
     margin-top: 40px;
 }
 
@@ -200,14 +200,10 @@ footer {
     width: 30px;
     height: 30px;
 }
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    nav ul li {
-        margin-right: 10px;
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
 }
