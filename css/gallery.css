@@ -3,6 +3,7 @@ body
     font-family: "Sofia", sans-serif;
     background-color: grey;
 }
+/* logo container*/
 .logo-container {
     margin-bottom: 10px;
     display: flex;
@@ -22,7 +23,7 @@ body
     color: transparent;
     
 }
-
+/* navigacion*/
 nav {
     width: 100%;
     text-align: center;
@@ -59,6 +60,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #333;
 }
+/* images style*/
 IMG {
 	width: 100%;
 	display: block;
@@ -102,9 +104,7 @@ IMG {
 	background-position: center;
 	clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%);
 }
-
-
-
+/* phone futures*/
 @supports (display: grid) {
 
 	@media (min-width: 17rem) {
