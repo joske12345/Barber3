@@ -168,7 +168,7 @@ nav ul li ul li a {
     height: 55px;
     width: 70px;
 }
-
+/*
 @media only screen and (max-width: 800px) {
     .nav-mobile {
         display: block;
@@ -253,7 +253,7 @@ nav ul li ul li a {
     #navbar-toggle.active span:after {
         transform: rotate(-45deg);
     }
-}
+}*/
 
 .about-container {
     background-color: grey;
