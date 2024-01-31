@@ -119,7 +119,7 @@ footer {
     padding: 20px;
     text-align: center;
     box-sizing: border-box;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .booking-form {
@@ -203,6 +203,7 @@ footer {
     width: 30px;
     height: 30px;
 }
+
 @media screen and (max-width: 800px) {
     .column {
         width: 100%;
