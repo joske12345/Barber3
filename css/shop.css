@@ -86,3 +86,27 @@ card img
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+img {
+    max-width: 100%;
+    max-height:100%;
+  }
+  
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+    color: white;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+
+}
+
+.social a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
