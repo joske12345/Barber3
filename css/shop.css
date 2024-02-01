@@ -73,7 +73,6 @@ nav ul li a:hover {
 }
 .card
 {
-    border: black;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10 rgba(0, 0, 0, 0.5);
